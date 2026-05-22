@@ -44,6 +44,10 @@ const discordUrl = 'https://discord.gg/pydat66RY';
       </a>
     </div>
 
+    <a href="https://trendshift.io/repositories/23482" target="_blank" rel="noopener noreferrer" class="hero-trendshift anim anim-5">
+      <img src="https://trendshift.io/api/badge/repositories/23482" alt="Lum1104/Understand-Anything | Trendshift" width="250" height="55" loading="lazy" />
+    </a>
+
     <a href="mailto:lum@understand-anything.com" class="hero-enterprise anim anim-5">
       <span class="hero-enterprise-label">Enterprise</span>
       <span class="hero-enterprise-divider">&middot;</span>
@@ -284,6 +288,25 @@ const discordUrl = 'https://discord.gg/pydat66RY';
   .hero-secondary:hover {
     color: #d4a574;
     text-decoration: none;
+  }
+
+  /* Trendshift badge — sits between the action row and the enterprise pill */
+  .hero-trendshift {
+    margin-top: 1.75rem;
+    display: inline-block;
+    line-height: 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+
+  .hero-trendshift img {
+    display: block;
+    width: 250px;
+    height: 55px;
+  }
+
+  .hero-trendshift:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 0 14px rgba(212, 165, 116, 0.25));
   }
 
   /* Enterprise contact — pill that mirrors the hero badge at the top */
